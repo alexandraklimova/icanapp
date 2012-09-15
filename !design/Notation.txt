@@ -1,0 +1,7 @@
+Master = someone who can do things
+	Talent
+	Event
+
+Guest = someone who participates
+
+
