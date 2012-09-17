@@ -14,22 +14,22 @@ class User {
 	String sex
     String description
 
-	static hasMany = [qualifications: Qualification, subscriptions: Subscription, reservations: Reservation, reservationRequests: ReservationRequest]
+//	static hasMany = [userQualifications: UserQualification, subscriptions: Subscription, reservations: Reservation, reservationRequests: ReservationRequest]
 	
-	
+	static hasMany = [userQualifications: UserQualification]
 	
 
 	static constraints = {
 		username blank: false, unique: true
 		password blank: false
 		description nullable:true
-		email email: true, nullable: true
+		email email: true, nullable: true,  unique: true
 		sex  nullable: true
 		
 		
-		qualifications nullable : true 
-		subscriptions nullable : true 
-		reservations nullable : true 
+		userQualifications nullable : true 
+//		subscriptions nullable : true 
+//		reservations nullable : true 
 	}
 
 	static mapping = {

@@ -1,6 +1,6 @@
 package icanapp
 
-class CategoryController {
+class UserQualificationController {
     static scaffold = true
-
 }
+

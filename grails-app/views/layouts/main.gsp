@@ -44,7 +44,7 @@
       
 		<sec:ifNotLoggedIn>
 			<g:link controller='login' action='auth'>Login</g:link> <!--  TODO external strings -->
-			<g:link controller='register' action='auth'>Register</g:link>  <!--  TODO register --> <!--  TODO external strings -->
+			<g:link controller='register' action='index'>Register</g:link>  <!--  TODO register --> <!--  TODO external strings -->
 		</sec:ifNotLoggedIn>
 
 		</span>

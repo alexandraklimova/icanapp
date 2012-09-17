@@ -4,9 +4,9 @@ class Event {
     Date date
 	String description
 	String location
-	Integer maxReservations
-	
-	static belongsTo = [qualification:Qualification, master:User]
+	Integer maxReservation
+	boolean mode
+	static belongsTo = [userQualification:UserQualification]
 	static hasMany = [reservations:Reservation]
 	
     static constraints = {

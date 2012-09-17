@@ -1,15 +1,8 @@
 package icanapp
 
 class Reservation {
-	Date dateWhenCreated
-	
+	Date createdDate	
 	static belongsTo = [event:Event, customer:User]
-	
-	
-	
-	
-	
-	
     static constraints = {
     }
 }
