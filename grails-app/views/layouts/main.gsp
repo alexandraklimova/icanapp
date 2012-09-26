@@ -17,7 +17,6 @@
 		<g:layoutHead/>
         <r:layoutResources />
         <g:javascript library='application' />
-     
 	</head>
 	<body>
 

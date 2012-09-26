@@ -126,3 +126,14 @@ grails {
 //grails.plugins.springsecurity.ui.forgotPassword.emailSubject =
 //grails.plugins.springsecurity.ui.forgotPassword.postResetUrl =
 
+// bootstrap
+grails.plugins.twitterbootstrap.fixtaglib = true
+grails.plugins.twitterbootstrap.defaultBundle = 'bundle_bootstrap'
+grails.resources.modules = {
+	
+		'custom-bootstrap' {
+			dependsOn 'bootstrap'
+			resource url:[dir: 'css', file: 'bootstrap.css'], attrs:[rel: "stylesheet/css", type:'css']
+		}
+	
+	}
