@@ -1,4 +1,11 @@
 package icanapp
+//extends grails.plugins.springsecurity.ui.UserController
+class UserController  {
+	static scaffold = true
+	
+def profile = {
+	[message:"hello world"]
+	}
 
-class UserController extends grails.plugins.springsecurity.ui.UserController {
+def defaultAction = "profile"
 }
